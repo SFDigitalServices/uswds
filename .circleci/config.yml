@@ -43,6 +43,9 @@ jobs:
       - run:
           name: Build the USWDS package
           command: npm run release
+      - run:
+          name: Copy to asset server
+          command: echo $CIRCLE_BUILD_NUM
       # - run:
       #     name: Publish to NPM
       #     command: |
